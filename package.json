@@ -1,0 +1,15 @@
+{
+  "name": "api-todolist",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "fastify": "^3.27.0",
+    "fastify-plugin": "^3.0.1",
+    "mongoose": "^6.1.10",
+    "nodemon": "^2.0.15"
+  }
+}
