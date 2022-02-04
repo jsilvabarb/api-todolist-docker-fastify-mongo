@@ -18,7 +18,7 @@ Api para listar tarefas
 
 ## Requisições e Respostas
 
-| Endpoint                           | HTTP Method             | Description              |
+| Endpoint                           | Método HTTP             | Descrição                |
 | ---------------------------------- | :---------------------: | :-----------------------:|
 | `/`                                | `GET`                   | `Info`                   |
 | `/addtask`                         | `POST`                  | `Add nova tarefa`        |
