@@ -18,12 +18,24 @@ Api para listar tarefas
 
 ## Requisições e Respostas
 
+| Endpoint                           | HTTP Method             | Description              |
+| ---------------------------------- | :---------------------: | :-----------------------:|
+| `/`                                | `GET`                   | `Info`                   |
+| `/addtask`                         | `POST`                  | `Add nova tarefa`        |
+| `/gettask/:id`                     | `GET`                   | `Exibe uma tarefa`       |
+| `/getalltask`                      | `GET`                   | `Exibe todas as tarefas` |
+| `/editask/:id`                     | `PUT`                   | `Atualiza tarefa`        |
+| `/deletetask/:id`                  | `DELETE`                | `Deleta uma tarefa`      |
+| `/deletealltask`                   | `DELETE`                | `Deleta todas as tarefas`|
+
+
+
 Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelhante
 
-- `Requisição info`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/
+    Info
 ```
 
 - `Resposta`
@@ -39,10 +51,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
         "delete_all_tasks": "/deletealltask"
     }
 ```
-- `Requisição para adicionar uma nova tarefa`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/addtask
+   Add nova tarefa
 ```
 
 - `Resposta`
@@ -57,10 +69,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
     }
 ```
 
-- `Requisição para exibir uma tarefa`
+- `Requisição`
 
 ```sh
-     http://localhost:3000/gettask/:id
+     Exibe uma tarefa
 ```
 - `Resposta`
 
@@ -73,10 +85,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
             "__v": 0
         }
 ```
-- `Requisição para exibir todas as tarefas`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/getalltask
+   Exibe todas as tarefas
 ```
 - `Resposta`
     
@@ -98,10 +110,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
         }
     ]
 ```
-- `Requisição para atualizar uma tarefa`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/editask/:id
+    Atualiza tarefa
 ```
 
 
@@ -115,10 +127,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
         "__v": 0
     }
 ```
-- `Requisição para deletar uma tarefa`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/deletetask/:id
+    Deleta uma tarefa
 ```
 
 - `Resposta`
@@ -129,10 +141,10 @@ Para testar você pode utilizar o Insomnia, Postman ou alguma plataforma semelha
     }
 ```
 
-- `Requisição para deletar todas as tarefas`
+- `Requisição`
 
 ```sh
-    http://localhost:3000/deletealltask
+    Deleta todas as tarefas
 ```
 - `Resposta`
 
