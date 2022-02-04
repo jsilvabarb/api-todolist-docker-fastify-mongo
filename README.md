@@ -11,10 +11,14 @@ Api para listar tarefas
 - nodemon versão 2.0.15
 
 ## Docker
-
+ Docker é uma plataforma que facilita a criação e administração de serviços isolados. Um container é uum conjunto de um ou mais processos organizados isoladamente do sistema através de namespaces + chroot disposto em um servidor que divide um único host de controle, logo o Docker facilita a criação e administração de containers por meio de imagens (receitas de Bolo).  
+ 
 ## Docker-compose
+ O Docker Compose é um orquestrador de containers, ou seja, com ele podemos organizar o comportamento de diversos containers através do arquivo docker-compose.yml.
+ Dessa forma, para nossa aplicação node que depende do Mongodb, indicamos a dependencia no arquivo docker-compose e especificamos a rede(networking) para que tanto a aplicação node quanto o banco possam se comunicar. Assim, não precisamos fazer tudo manualmente com o docker-run, o que agiliza muito o desenvolvimento.
 
 ## Fastify
+O Fastify é um framework web focado em performance com uma arquitetura de plugins, assim como no JavaScript tudo é um objeto no Fastify tudo é um plugin.
 
 ## Requisições e Respostas
 
